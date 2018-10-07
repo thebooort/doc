@@ -404,7 +404,7 @@ my $m = Math::Model.new(
     variables   => {
         velocity           => { $:growth_constant * $:x - $:growth_constant * $:x * $:x / $:k },
         growth_constant    => { 1 },   # basal growth rate
-	k                  => { 100 }, # carrying capacity
+        k                  => { 100 }, # carrying capacity
     },
     initials    => {
         x       => 3,
@@ -454,8 +454,8 @@ my $m = Math::Model.new(
     variables   => {
         velocity_x           => { $:growth_constant * $:x *($:x/$:a -1)*(1- $:x/$:k) },
         growth_constant    => { 0.7 },   # basal growth rate
-	k                  => { 100 }, # carrying capacity
-	a		   => { 15 },  # critical point
+        k                  => { 100 }, # carrying capacity
+        a                  => { 15 },  # critical point
     },
     initials    => {
         x       => 15,
